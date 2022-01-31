@@ -11,6 +11,10 @@ function App() {
 
   const [route, dynamicConfig] = useMemo(() => {
     let {route, room} = parsePath(pathname);
+
+    room.name = "Hello Name";
+    console.log("rt", room);
+
     let config = parseUrlConfig(search, hash);
     config.room = {...room, ...(config.room ?? null)};
     return [route, config];

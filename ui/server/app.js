@@ -31,6 +31,8 @@ const preloadScript = getPreloadScript();
 
 let jamConfigFromFile = {};
 try {
+  console.log(process.env.JAM_CONFIG_DIR, "PRIYAM");
+
   jamConfigFromFile = JSON.parse(
     fs
       .readFileSync(process.env.JAM_CONFIG_DIR + '/jam-config.json')

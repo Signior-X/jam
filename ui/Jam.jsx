@@ -27,6 +27,7 @@ const [state, api] = createJam({
 declareStateRoot(ShowModals, null, {state});
 
 export default function Jam(props) {
+  console.log("PRIYAM props", props);
   return (
     <JamProvider state={state} api={api}>
       <JamUI {...props} />
@@ -38,34 +39,28 @@ function JamUI({style, className, route = null, dynamicConfig = {}, ...props}) {
   const [state, {setProps}] = useJam();
 
   let roomId = null;
+  console.log(dynamicConfig);
 
   // routing
   const View = (() => {
-    switch (route) {
-      case null:
-        return <Start newRoom={dynamicConfig.room} />;
-      case 'me':
-        return <Me />;
-      default:
-        roomId = route;
-        return (
-          <PossibleRoom
-            roomId={route}
+    roomId = 'PRIYAM_ROOM_1';
+    return (
+      <PossibleRoom
+        roomId={roomId}
+        newRoom={dynamicConfig.room}
+        autoCreate={true}
+        roomIdentity={dynamicConfig.identity}
+        roomIdentityKeys={dynamicConfig.keys}
+        uxConfig={dynamicConfig.ux ?? emptyObject}
+        onError={({error}) => (
+          <Start
+            urlRoomId={roomId}
+            roomFromURIError={!!error.createRoom}
             newRoom={dynamicConfig.room}
-            autoCreate={!!dynamicConfig.ux?.autoCreate}
-            roomIdentity={dynamicConfig.identity}
-            roomIdentityKeys={dynamicConfig.keys}
-            uxConfig={dynamicConfig.ux ?? emptyObject}
-            onError={({error}) => (
-              <Start
-                urlRoomId={route}
-                roomFromURIError={!!error.createRoom}
-                newRoom={dynamicConfig.room}
-              />
-            )}
           />
-        );
-    }
+        )}
+      />
+    );
   })();
 
   // set/unset room id

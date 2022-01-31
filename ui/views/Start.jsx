@@ -8,6 +8,8 @@ import {useJam} from '../jam-core-react';
 export default function Start({newRoom = {}, urlRoomId, roomFromURIError}) {
   const [, {enterRoom, setProps, createRoom}] = useJam();
 
+  console.log("New room", newRoom);
+
   // note: setters are currently unused because form is hidden
   let [name, setName] = useState(newRoom.name ?? '');
   let [description, setDescription] = useState(newRoom.description ?? '');
@@ -32,6 +34,7 @@ export default function Start({newRoom = {}, urlRoomId, roomFromURIError}) {
 
     (async () => {
       let roomPosted = {name, description, logoURI, color, stageOnly};
+      console.log(roomPosted, "room");
       let ok = await createRoom(roomId, roomPosted);
       if (ok) {
         if (urlRoomId !== roomId) navigate('/' + roomId);

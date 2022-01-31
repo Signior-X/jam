@@ -4,7 +4,8 @@ export {parsePath, parseUrlConfig};
 
 function parsePath(pathname) {
   let [first = null, second] = pathname.split('/').filter(identity);
-  let stageOnly = first === 's';
+  // let stageOnly = first === 's';
+  let stageOnly = true;
   // other special configs go here
   let route = stageOnly ? second : first;
   let room = {stageOnly};

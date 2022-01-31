@@ -21,6 +21,8 @@ export default function PossibleRoom({
     'isRoomLoading',
     'roomId',
   ]);
+
+  console.log("Possible room room", room);
   isLoading = isLoading || _roomId === null;
 
   // import room identity
