@@ -23,7 +23,7 @@
   background-color: #e0e0e0;
 }
 
-.pcon {
+.pcon, .pmodal {
   background-color: white;
 }
 
@@ -371,11 +371,45 @@
   border: none !important;
 }
 
-.dark .bg-gray-200 {
+.dark .bg-gray-50 {
+  background-color: var(--color-dark-850);
+}
+
+.dark .bg-gray-200, .dark .bg-gray-100 {
   background-color: var(--color-jam-default) !important;
   color: var(--color-white-200);
 }
 
 .dark .text-gray-600, .dark .text-gray-500 {
   color: var(--color-white-200);
+}
+
+.dark.jam h1, .dark.jam h2, .dark.jam h3 {
+  color: var(--color-white-200);
+}
+
+.dark .text-black {
+  color: var(--color-white-200);
+}
+
+/* For the avatars */
+.dark .bg-white {
+  background-color: var(--color-dark-800);
+}
+
+.dark .bg-gray-300 {
+  background-color: var(--color-white-200);
+}
+
+/* Mute svg on avatar */
+.dark .pmute {
+  fill: var(--color-white-200);
+}
+
+.dark hr {
+  border-color: var(--color-dark-600);
+}
+
+.dark .pmodal {
+  background-color: var(--color-dark-800);
 }
