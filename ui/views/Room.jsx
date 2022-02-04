@@ -228,7 +228,8 @@ export default function Room({room, roomId, uxConfig}) {
                     peerState={myPeerState}
                     info={myInfo}
                     handRaised={handRaised}
-                    onClick={() => setEditSelf(true)}
+                    // onClick={() => {}}
+                    // onClick={() => setEditSelf(true)}
                   />
                 )}
                 {audiencePeers.map(peerId => (
