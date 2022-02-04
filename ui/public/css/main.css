@@ -398,7 +398,7 @@
 }
 
 .dark .bg-gray-300 {
-  background-color: var(--color-white-200);
+  background-color: var(--color-white-400);
 }
 
 /* Mute svg on avatar */
@@ -412,4 +412,12 @@
 
 .dark .pmodal {
   background-color: var(--color-dark-800);
+}
+
+.dark .border-gray-400 {
+  border-color: var(--color-dark-650);
+}
+
+.dark .border-gray-300 {
+  border-color: var(--color-dark-600);
 }
