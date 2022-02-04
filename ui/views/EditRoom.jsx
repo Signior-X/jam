@@ -413,7 +413,7 @@ export function EditRoomModal({roomId, room, close}) {
         <hr />
         <br /> */}
 
-        <input
+        {/* <input
           className="rounded bg-gray-50 text-gray-400 w-full"
           defaultValue={`<iframe src="${window.location.href}" allow="microphone *;" width="420" height="600"></iframe>`}
         />
@@ -428,7 +428,7 @@ export function EditRoomModal({roomId, room, close}) {
             Learn more
           </a>
           )
-        </div>
+        </div> */}
       </div>
     </Modal>
   );
