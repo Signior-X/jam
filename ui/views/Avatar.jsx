@@ -17,12 +17,16 @@ export function StageAvatar({
   info,
   onClick,
 }) {
+
+  console.log("Priyam check", info);
+
   let mqp = useMqParser();
   let {micMuted, inRoom = null} = peerState || {};
   let reactions_ = reactions[peerId];
   info = info || {id: peerId};
   let isSpeaking = speaking.has(peerId);
   let isModerator = moderators.includes(peerId);
+
   return (
     inRoom && (
       <li

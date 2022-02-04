@@ -148,7 +148,7 @@ export function EditSelf({onCancel}) {
       <h3 className="font-medium">Actions</h3>
       <br />
       <ButtonContainer>
-        {!room.access?.lockedIdentities && (
+        {/* {!room.access?.lockedIdentities && (
           <SecondaryButton
             onClick={() => {
               openModal(EditIdentity);
@@ -157,7 +157,7 @@ export function EditSelf({onCancel}) {
           >
             Edit Profile
           </SecondaryButton>
-        )}
+        )} */}
         {!stageOnly && iModerate && !iSpeak && (
           <SecondaryButton
             onClick={() => addSpeaker(roomId, myId).then(onCancel)}
@@ -182,7 +182,7 @@ export function EditSelf({onCancel}) {
             ↓ Leave Stage
           </SecondaryButton>
         )}
-        {iSpeak && (
+        {/* {iSpeak && (
           <SecondaryButton
             onClick={() => {
               openModal(StreamingModal);
@@ -222,7 +222,7 @@ export function EditSelf({onCancel}) {
               ? 'Stop Podcast Recording'
               : 'Start Podcast Recording'}
           </SecondaryButton>
-        )}
+        )} */}
         <SecondaryButton light onClick={onCancel}>
           Cancel
         </SecondaryButton>
