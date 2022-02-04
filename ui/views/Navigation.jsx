@@ -63,7 +63,7 @@ export default function Navigation({
 
   return (
     <div
-      className="z-10 bg-white p-4"
+      className="pnav z-10 bg-white p-4"
       style={{
         ...navigationStyle,
         ...(width < breakpoints.sm ? navigationStyleSmall : null),

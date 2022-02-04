@@ -39,6 +39,12 @@ function JamUI({style, className, route = null, dynamicConfig = {}, ...props}) {
 
   let roomId = null;
 
+  let isDark = "";
+
+  if (dynamicConfig.theme && dynamicConfig.theme === "dark") {
+    isDark = "dark";
+  }
+
   // routing
   const View = (() => {
     switch (route) {
@@ -94,7 +100,7 @@ function JamUI({style, className, route = null, dynamicConfig = {}, ...props}) {
   return (
     <div
       ref={el => setContainer(el)}
-      className={mqp(mergeClasses('jam sm:pt-12', className), width)}
+      className={mqp(mergeClasses('jam sm:pt-12', className, isDark), width)}
       style={{
         position: 'relative',
         height: '100%',

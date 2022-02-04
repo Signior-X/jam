@@ -8,7 +8,7 @@ export default function Container({className, style, ...props}) {
   let border = belowSm ? '0px' : '2px solid lightgrey';
   return (
     <div
-      className={mergeClasses('b-0', className)}
+      className={mergeClasses('pcon b-0', className)}
       style={{
         width: width < 720 ? '100%' : '700px',
         margin: '0 auto',
@@ -19,7 +19,6 @@ export default function Container({className, style, ...props}) {
         borderLeft: border,
         borderRight: border,
         borderBottom: '0px',
-        backgroundColor: 'white',
         boxSizing: 'border-box',
         ...(style || null),
       }}
