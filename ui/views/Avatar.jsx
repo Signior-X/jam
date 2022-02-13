@@ -18,8 +18,6 @@ export function StageAvatar({
   onClick,
 }) {
 
-  console.log("Priyam check", info);
-
   let mqp = useMqParser();
   let {micMuted, inRoom = null} = peerState || {};
   let reactions_ = reactions[peerId];
