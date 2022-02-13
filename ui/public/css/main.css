@@ -355,8 +355,8 @@
 }
 
 .dark.jam {
-  background-color: var(--color-dark-900);
-  color: var(--color-white-200);
+  background-color: var(--color-dark-900) !important;
+  color: var(--color-white-200) !important;
 }
 
 .dark .pcon {

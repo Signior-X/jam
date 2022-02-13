@@ -157,7 +157,7 @@ export function EditRoomModal({roomId, room, close}) {
           {/* advanced Room options */}
           {showAdvanced && (
             <div>
-              <br />
+              {/* <br />
               <input
                 className={mqp(
                   'rounded placeholder-gray-300 bg-gray-50 w-full md:w-full'
@@ -174,9 +174,9 @@ export function EditRoomModal({roomId, room, close}) {
               <div className="p-2 text-gray-500 italic">
                 Set the URI for your logo.{' '}
                 <span className="text-gray-400">(optional)</span>
-              </div>
+              </div> */}
 
-              <br />
+              {/* <br />
               <input
                 className="rounded w-44 h-12"
                 type="color"
@@ -190,9 +190,9 @@ export function EditRoomModal({roomId, room, close}) {
               <div className="p-2 text-gray-500 italic">
                 Set primary color for your Room.{' '}
                 <span className="text-gray-400">(optional)</span>
-              </div>
+              </div> */}
 
-              <br />
+              {/* <br />
               <input
                 className={mqp(
                   'rounded placeholder-gray-400 bg-gray-50 w-full md:w-full'
@@ -209,9 +209,9 @@ export function EditRoomModal({roomId, room, close}) {
               <div className="p-2 text-gray-500 italic">
                 Set the link for the {`'call to action'`} button.{' '}
                 <span className="text-gray-400">(optional)</span>
-              </div>
+              </div> */}
 
-              <br />
+              {/* <br />
               <input
                 className={mqp(
                   'rounded placeholder-gray-400 bg-gray-50 w-full md:w-96'
@@ -228,9 +228,9 @@ export function EditRoomModal({roomId, room, close}) {
               <div className="p-2 text-gray-500 italic">
                 Set the text for the {`'call to action'`} button.{' '}
                 <span className="text-gray-400">(optional)</span>
-              </div>
+              </div> */}
 
-              <br />
+              {/* <br />
               <input
                 className={mqp(
                   'rounded placeholder-gray-400 bg-gray-50 w-full md:w-96'
@@ -247,11 +247,11 @@ export function EditRoomModal({roomId, room, close}) {
               <div className="p-2 text-gray-500 italic">
                 The URL used for sharing the room.
                 <span className="text-gray-400">(optional)</span>
-              </div>
+              </div> */}
 
               <br />
               <hr />
-              <br />
+              {/* <br />
               <input
                 className="ml-2"
                 type="checkbox"
@@ -271,7 +271,7 @@ export function EditRoomModal({roomId, room, close}) {
                   Everyone else sees the description and the&nbsp;
                   {`'call to action'`} button.
                 </div>
-              </label>
+              </label> */}
             </div>
           )}
           <div className="flex">
@@ -294,7 +294,7 @@ export function EditRoomModal({roomId, room, close}) {
         <br />
 
         <form>
-          <div className="pb-1">🗓 Room Schedule (experimental)</div>
+          {/* <div className="pb-1">🗓 Room Schedule (experimental)</div>
           <div className="pb-3 text-gray-500">
             Set the date and time for an upcoming event.
           </div>
@@ -406,12 +406,12 @@ export function EditRoomModal({roomId, room, close}) {
             >
               Set Schedule
             </button>
-          </div>
+          </div> */}
         </form>
 
         <br />
-        <hr />
-        <br />
+        {/* <hr /> */}
+        {/* <br />
         <input
           className="rounded bg-gray-50 text-gray-400 w-full"
           defaultValue={`<iframe src="${window.location.href}" allow="microphone *;" width="420" height="600"></iframe>`}
@@ -427,7 +427,7 @@ export function EditRoomModal({roomId, room, close}) {
             Learn more
           </a>
           )
-        </div>
+        </div> */}
       </div>
     </Modal>
   );
