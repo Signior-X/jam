@@ -59,7 +59,7 @@ export function StageAvatar({
         {(!!micMuted || !canSpeak) && (
           <div
             className={mqp(
-              'absolute w-10 h-10 right-0 top-12 md:top-20 rounded-full bg-white border-2 text-2xl border-gray-400 flex items-center justify-center'
+              'pmute absolute w-10 h-10 right-0 top-12 md:top-20 rounded-full bg-white border-2 text-2xl border-gray-400 flex items-center justify-center'
             )}
           >
             <MicOffSvg

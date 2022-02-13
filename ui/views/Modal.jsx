@@ -31,7 +31,7 @@ export function Modal({close, children}) {
       onClick={close}
     >
       <div
-        className={mqp('relative p-1 pt-10 pb-10 sm:rounded-xl')}
+        className={mqp('pmodal relative p-1 pt-10 pb-10 sm:rounded-xl')}
         style={{
           flex: 'none',
           display: 'flex',
@@ -41,7 +41,6 @@ export function Modal({close, children}) {
           maxWidth: '100%',
           maxHeight: '100%',
           overflowY: 'hidden',
-          backgroundColor: 'white',
         }}
         onClick={e => {
           e.stopPropagation();

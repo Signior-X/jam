@@ -1,9 +1,30 @@
 .jam {
+  --color-white-100: #eaecf0;
+  --color-white-200: #dcddde;
+  --color-white-300: #b9bbbe;
+  --color-white-400: #818285;
+  --color-dark-500: #39475c;
+  --color-dark-600: #4f545c;
+  --color-dark-650: #474b52;
+  --color-dark-700: #36393f;
+  --color-dark-750: #2f3136;
+  --color-dark-800: #292b2f;
+  --color-dark-850: #202225;
+  --color-dark-900: #18191c;
+  --color-secondary-washed-out: #879eed;
+  --color-secondary: #55a5e7;
+  --color-light-blue: #5476aa;
+  --color-jam-default: rgb(75, 85, 99);
+
   /* width: 100%; */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
-  background-color: rgb(250, 245, 239);
+  background-color: #e0e0e0;
+}
+
+.pcon, .pmodal {
+  background-color: white;
 }
 
 /* markdown styling */
@@ -331,4 +352,72 @@
 
 .jam .human-radius {
   border-radius: 42%;
+}
+
+.dark.jam {
+  background-color: var(--color-dark-900);
+  color: var(--color-white-200);
+}
+
+.dark .pcon {
+  background-color: var(--color-dark-800);
+  color: var(--color-white-200);
+  border: none !important;
+}
+
+.dark .pnav {
+  background-color: var(--color-dark-800);
+  color: var(--color-white-200);
+  border: none !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: var(--color-dark-850);
+}
+
+.dark .bg-gray-200, .dark .bg-gray-100 {
+  background-color: var(--color-jam-default) !important;
+  color: var(--color-white-200);
+}
+
+.dark .text-gray-600, .dark .text-gray-500 {
+  color: var(--color-white-200);
+}
+
+.dark.jam h1, .dark.jam h2, .dark.jam h3 {
+  color: var(--color-white-200);
+}
+
+.dark .text-black {
+  color: var(--color-white-200);
+}
+
+/* For the avatars */
+.dark .bg-white {
+  background-color: var(--color-dark-800);
+}
+
+.dark .bg-gray-300 {
+  background-color: var(--color-white-400);
+}
+
+/* Mute svg on avatar */
+.dark .pmute {
+  fill: var(--color-white-200);
+}
+
+.dark hr {
+  border-color: var(--color-dark-600);
+}
+
+.dark .pmodal {
+  background-color: var(--color-dark-800);
+}
+
+.dark .border-gray-400 {
+  border-color: var(--color-dark-650);
+}
+
+.dark .border-gray-300 {
+  border-color: var(--color-dark-600);
 }
